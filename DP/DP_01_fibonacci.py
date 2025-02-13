@@ -39,6 +39,22 @@ class Solution:
     
         ## Time Complexity: O(n)
         ## Space Complexity: O(n)
+
+    def fib_dp_space_optimization(self, n: int) -> int:
+        ## Space Optimization is a technique to store the results of the function calls in a single variable instead of using an array
+        ## We can use a single variable to store the results of the function calls
+        ## We can use a dictionary to store the results of the function calls
+
+        array_dp = [0,1]
+
+        for i in range(2,n+1):
+            prev, curr = curr, prev + curr
+        return curr
+    
+        ## Time Complexity: O(n)
+        ## Space Complexity: O(1)   
+        
+
         
 
 def main():

@@ -13,7 +13,20 @@ class Solution:
         ## either add it to the sum or subtract it from the sum
         ## return the number of ways to achieve the target
 
+        ## base case is when we have traversed the entire array or we have reached the target 
+        ## base case:
+
+        def backtrack(index: int, curr_sum: int) -> int:
+            if index == len(nums):
+                return 1 if curr_sum == target else 0
+            
+            return backtrack(index + 1, curr_sum + nums[index]) + \
+                   backtrack(index + 1, curr_sum - nums[index])
         
+        return backtrack(0, 0)
+                    
+        
+
 
         
 
