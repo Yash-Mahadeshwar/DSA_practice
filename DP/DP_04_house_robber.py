@@ -153,6 +153,10 @@ def main():
         'empty': {
             'nums': [],
             'expected': 0,  # No houses to rob
+        },
+        'large_input': {
+            'nums': [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+            'expected': 30,  # Rob every other house
         }
     }
     
